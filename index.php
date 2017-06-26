@@ -1,9 +1,11 @@
 <?php
 
-require('/app/steam_key.php');
+
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__DIR__) . '/steam_ffs');
+
+require(ROOT . '/app/steam_key.php');
 
 $request_uri = parse_url($_SERVER['REQUEST_URI']);
 $request_uri = explode("/", $request_uri['path']);
