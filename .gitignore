@@ -1,2 +1,4 @@
 test/
-app/steam_key.php
+config/steam_key.php
+vendor/*
+var/cache/*
